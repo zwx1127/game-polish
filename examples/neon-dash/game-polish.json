@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "project": {
+    "name": "Neon Dash",
+    "engine": "godot",
+    "root": "."
+  },
+  "cycle": {
+    "interval_minutes": null,
+    "max_tokens": null
+  },
+  "goals": [
+    "Improve orb collection feedback without changing scoring or movement"
+  ],
+  "constraints": [
+    "Keep seed-7 180-step replay at 300 points and zero misses",
+    "Use gdx for all Godot runtime control and visual capture",
+    "Do not install gdx add-ons without authorized setup"
+  ],
+  "checks": {
+    "scripts": {
+      "argv": [
+        "gdx",
+        "--project",
+        "{project_root}",
+        "script",
+        "check-all"
+      ],
+      "timeout_seconds": 120
+    }
+  },
+  "review": {
+    "required_evidence": [
+      "before screenshot",
+      "after screenshot",
+      "interaction recording"
+    ],
+    "acceptance": [
+      "No new errors in configured checks",
+      "Human review of feel, readability, and accessibility",
+      "Same Godot version, gdx revision, 960x600 viewport, seed 7 and 180 steps for both captures"
+    ]
+  }
+}

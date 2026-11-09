@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "game-polish project configuration",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "project",
+    "goals",
+    "constraints",
+    "checks",
+    "review"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "project": {
+      "type": "object",
+      "required": [
+        "name",
+        "engine",
+        "root"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "engine": {
+          "type": "string",
+          "minLength": 1
+        },
+        "root": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "goals": {
+      "$ref": "#/$defs/strings"
+    },
+    "constraints": {
+      "$ref": "#/$defs/strings"
+    },
+    "checks": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[a-zA-Z0-9_-]+$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "argv"
+        ],
+        "properties": {
+          "argv": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "timeout_seconds": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3600,
+            "default": 60
+          },
+          "expect_json_ok": {
+            "type": "boolean",
+            "default": false
+          }
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "required_evidence",
+        "acceptance"
+      ],
+      "properties": {
+        "required_evidence": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/strings"
+            },
+            {
+              "minItems": 1
+            }
+          ]
+        },
+        "acceptance": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/strings"
+            },
+            {
+              "minItems": 1
+            }
+          ]
+        }
+      }
+    },
+    "cycle": {
+      "type": "object",
+      "properties": {
+        "interval_minutes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "max_tokens": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        }
+      }
+    }
+  },
+  "$defs": {
+    "strings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

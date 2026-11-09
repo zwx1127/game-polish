@@ -1,0 +1,1 @@
+These two success JSON fixtures were captured from an actual llm-game gdx integration on 2026-11-06 (Godot 4.6.3, gdx source d08d7a4 plus a local startup-timeout extension). Paths and process IDs are historical, not active resources. Tests replay these records to check protocol parsing; fixture replay is not a new engine run, health check, or visual quality evaluation.

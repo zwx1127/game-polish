@@ -1,0 +1,32 @@
+{
+  "skill_validator": "passed",
+  "relative_links_checked": [
+    {
+      "source": "SKILL.md",
+      "target": "references/continuous-passes.md"
+    },
+    {
+      "source": "SKILL.md",
+      "target": "references/evidence-loop.md"
+    },
+    {
+      "source": "SKILL.md",
+      "target": "references/godot.md"
+    },
+    {
+      "source": "SKILL.md",
+      "target": "references/animation-and-assets.md"
+    },
+    {
+      "source": "SKILL.md",
+      "target": "references/playtest.md"
+    },
+    {
+      "source": "SKILL.md",
+      "target": "references/round-completion.md"
+    }
+  ],
+  "python_tests": 24,
+  "python_tests_passed": true,
+  "scope": "Static structure, reference resolution and existing CLI regression; behavioral synthetic review reported separately"
+}

@@ -1,0 +1,29 @@
+test_baseline_comparison_flags_changed_commands (test_cli.CliTests.test_baseline_comparison_flags_changed_commands) ... ok
+test_config (test_cli.CliTests.test_config) ... ok
+test_cycle_capability_feedback (test_cli.CliTests.test_cycle_capability_feedback) ... ok
+test_evidence_placeholder (test_cli.CliTests.test_evidence_placeholder) ... ok
+test_evidence_symlink_escape (test_cli.CliTests.test_evidence_symlink_escape) ... ok
+test_execute_and_baseline (test_cli.CliTests.test_execute_and_baseline) ... ok
+test_failed_check (test_cli.CliTests.test_failed_check) ... ok
+test_init_does_not_overwrite (test_cli.CliTests.test_init_does_not_overwrite) ... ok
+test_invalid_cycle_budget (test_cli.CliTests.test_invalid_cycle_budget) ... ok
+test_invalid_selection_and_baseline (test_cli.CliTests.test_invalid_selection_and_baseline) ... ok
+test_invalid_timeout (test_cli.CliTests.test_invalid_timeout) ... ok
+test_json_success_contract (test_cli.CliTests.test_json_success_contract) ... ok
+test_missing_executable (test_cli.CliTests.test_missing_executable) ... ok
+test_plan_does_not_execute (test_cli.CliTests.test_plan_does_not_execute) ... ok
+test_recorded_gdx_output_compatibility (test_cli.CliTests.test_recorded_gdx_output_compatibility) ... ok
+test_timeout (test_cli.CliTests.test_timeout) ... ok
+test_unsafe_check_name (test_cli.CliTests.test_unsafe_check_name) ... ok
+test_automatic_reports_for_planned_passed_and_failed (test_reporting.ReportingTests.test_automatic_reports_for_planned_passed_and_failed) ... ok
+test_html_untrusted_text_escaped (test_reporting.ReportingTests.test_html_untrusted_text_escaped) ... ok
+test_invalid_empty_observations_not_silently_accepted (test_reporting.ReportingTests.test_invalid_empty_observations_not_silently_accepted) ... ok
+test_invalid_observations_preserve_reports (test_reporting.ReportingTests.test_invalid_observations_preserve_reports) ... ok
+test_json_contract_failure_reason_visible (test_reporting.ReportingTests.test_json_contract_failure_reason_visible) ... ok
+test_refresh_reads_observations_and_does_not_execute (test_reporting.ReportingTests.test_refresh_reads_observations_and_does_not_execute) ... ok
+test_symlink_report_rejected (test_reporting.ReportingTests.test_symlink_report_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 1.391s
+
+OK
